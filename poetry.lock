@@ -30,6 +30,24 @@ optional = false
 python-versions = ">=3.7.0"
 
 [[package]]
+name = "html5lib"
+version = "1.1"
+description = "HTML parser based on the WHATWG HTML specification"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+six = ">=1.9"
+webencodings = "*"
+
+[package.extras]
+all = ["genshi", "chardet (>=2.2)", "lxml"]
+chardet = ["chardet (>=2.2)"]
+genshi = ["genshi"]
+lxml = ["lxml"]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -130,15 +148,24 @@ brotli = ["brotlicffi (>=0.8.0)", "brotli (>=1.0.9)", "brotlipy (>=0.6.0)"]
 secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "urllib3-secure-extra", "ipaddress"]
 socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
+[[package]]
+name = "webencodings"
+version = "0.5.1"
+description = "Character encoding aliases for legacy web content"
+category = "main"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "f3e0358857492e75509017c37e1f1a59a118dc14fab75cebe7cb0d6db7e181bc"
+content-hash = "d2dc0557fe0b2fe689870a0bd3c63504e5944dc24ae7d94ad58092cd0664441e"
 
 [metadata.files]
 beautifulsoup4 = []
 certifi = []
 charset-normalizer = []
+html5lib = []
 idna = []
 numpy = []
 pandas = []
@@ -148,3 +175,4 @@ requests = []
 six = []
 soupsieve = []
 urllib3 = []
+webencodings = []

@@ -3,7 +3,7 @@ README
 Planning
 ---
 1. Pick an item to watch 
-    - Sweatwater guitars / strings / Petals 
+    - Sweetwater or Reverb - guitars / strings / Petals 
 2. Take data about:
     - Item Name
     - Price
